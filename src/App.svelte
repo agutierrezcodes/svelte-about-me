@@ -11,13 +11,13 @@
       "I have loved reading since I was a little kid. I recently finished Light Bringer by Pierce Brown (amazing book) and I just started reading Project Hail Mary by Andy Weir.",
   };
   cardData["Baking"] = {
-    image: "src/assets/brownies.jpg",
+    image: "/src/assets/brownies.jpg",
     title: "Baking",
     description:
       "Another one of my hobbies is baking! I especially enjoy making cookies and cakes.",
   };
   cardData["Traveling"] = {
-    image: "src/assets/Travel.jpg",
+    image: "./src/assets/Travel.jpg",
     title: "Traveling",
     description:
       "I really enjoy traveling. I've visited California, Oregon, Pennsylvania, New Jersey, and North Carolina, and I've also technically been to Utah, Minnesota, and Illinois (layovers lol).",
