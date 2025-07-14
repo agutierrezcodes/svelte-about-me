@@ -5,13 +5,13 @@
   let cardData = {};
 
   cardData["Reading"] = {
-    image: "src/assets/light_bringer.jpg",
+    image: "/svelte-about-me/src/assets/light_bringer.jpg",
     title: "Reading",
     description:
       "I have loved reading since I was a little kid. I recently finished Light Bringer by Pierce Brown (amazing book) and I just started reading Project Hail Mary by Andy Weir.",
   };
   cardData["Baking"] = {
-    image: "./src/assets/brownies.jpg",
+    image: "/svelte-about-me/src/assets/brownies.jpg",
     title: "Baking",
     description:
       "Another one of my hobbies is baking! I especially enjoy making cookies and cakes.",
@@ -29,7 +29,7 @@
       "I love coding! My first introduction to programming was through Codecademy in 2017. There, I learned HTML and CSS and decided to major in Computer Science. I later attended KWK's 2020 web development camp that took place just before my senior year of high school. I initially heard about it from Tik Tok lol and actually applied on the last day that applications were open. I also attended KWK's 2021 Data Science camp. I learned Python, C++, Java, C, SQL, and JavaScript (and some JS frameworks) from several courses I took during high school and college. And here's a picture of the custom keyboard my brother made for me last Christmas :)",
   };
   cardData["Titus"] = {
-    image: "./assets/titus.jpg",
+    image: "/svelte-about-me/src/assets/titus.jpg",
     title: "Titus",
     description:
       "This is my dog Titus! He is a 9 (almost 10) year old German Shepherd/Labrador Retriever/Border Collie mix. He's the sweetest boy and I love taking him out on walks.",
