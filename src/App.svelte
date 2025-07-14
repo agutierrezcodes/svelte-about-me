@@ -5,7 +5,8 @@
   let cardData = {};
 
   cardData["Reading"] = {
-    image: "/svelte-about-me/src/assets/light_bringer.jpg",
+    image:
+      "https://agutierrezcodes.github.io/svelte-about-me/src/assets/light_bringer.jpg",
     title: "Reading",
     description:
       "I have loved reading since I was a little kid. I recently finished Light Bringer by Pierce Brown (amazing book) and I just started reading Project Hail Mary by Andy Weir.",
