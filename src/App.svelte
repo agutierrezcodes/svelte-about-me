@@ -17,13 +17,13 @@
       "Another one of my hobbies is baking! I especially enjoy making cookies and cakes.",
   };
   cardData["Traveling"] = {
-    image: "",
+    image: "/svelte-about-me/src/assets/Travel.jpg",
     title: "Traveling",
     description:
       "I really enjoy traveling. I've visited California, Oregon, Pennsylvania, New Jersey, and North Carolina, and I've also technically been to Utah, Minnesota, and Illinois (layovers lol).",
   };
   cardData["Coding"] = {
-    image: "",
+    image: "/svelte-about-me/src/assets/Keyboard.jpg",
     title: "Coding",
     description:
       "I love coding! My first introduction to programming was through Codecademy in 2017. There, I learned HTML and CSS and decided to major in Computer Science. I later attended KWK's 2020 web development camp that took place just before my senior year of high school. I initially heard about it from Tik Tok lol and actually applied on the last day that applications were open. I also attended KWK's 2021 Data Science camp. I learned Python, C++, Java, C, SQL, and JavaScript (and some JS frameworks) from several courses I took during high school and college. And here's a picture of the custom keyboard my brother made for me last Christmas :)",
