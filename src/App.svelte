@@ -24,7 +24,7 @@
   };
   cardData["Coding"] = {
     image:
-      "src/assets/Keyboard.jpg",
+      "https://raw.githubusercontent.com/agutierrezcodes/svelte-about-me/refs/heads/master/src/assets/Keyboard.jpg",
     title: "Coding",
     description:
       "I love coding! My first introduction to programming was through Codecademy in 2017. There, I learned HTML and CSS and decided to major in Computer Science. I later attended KWK's 2020 web development camp that took place just before my senior year of high school. I initially heard about it from Tik Tok lol and actually applied on the last day that applications were open. I also attended KWK's 2021 Data Science camp. I learned Python, C++, Java, C, SQL, and JavaScript (and some JS frameworks) from several courses I took during high school and college. And here's a picture of the custom keyboard my brother made for me last Christmas :)",
