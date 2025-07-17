@@ -49,62 +49,67 @@
   let importantImage = $derived(cardData[importantSelection].image);
   let importantDescription = $derived(cardData[importantSelection].description);
 
+  let loaded = $state(false);
+
   // document.getElementById("theContent").style.display = "none";
 
   document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("theContent").style.display = "block";
+    //document.getElementById("theContent").style.display = "block";
+    loaded = true;
   });
 </script>
 
 <div class="container" id="theContent">
-  <h1 in:fly={{ y: -200, duration: 2000 }}>About Me</h1>
-  <p in:fly={{ y: 200, duration: 2000 }}>{bio}</p>
+  {#if loaded}
+    <h1 in:fly={{ y: -200, duration: 2000 }}>About Me</h1>
+    <p in:fly={{ y: 200, duration: 2000 }}>{bio}</p>
 
-  <h2 in:fly={{ y: 200, duration: 2000 }}>Things I love</h2>
-  <p in:fly={{ y: 200, duration: 2000 }}>
-    Click one of the buttons below to learn more about my favorite things!
-  </p>
-  <div class="important-stuff" in:fly={{ y: 200, duration: 2000 }}>
-    {#each importantThings as important}
-      <button
-        onclick={() => {
-          importantSelection = important;
-          importantImage = cardData[importantSelection].image;
-          importantDescription = cardData[importantSelection].description;
-        }}
-        class="important"
-        id={importantSelection}
-        autofocus>{important}</button
-      >
-    {/each}
+    <h2 in:fly={{ y: 200, duration: 2000 }}>Things I love</h2>
+    <p in:fly={{ y: 200, duration: 2000 }}>
+      Click one of the buttons below to learn more about my favorite things!
+    </p>
+    <div class="important-stuff" in:fly={{ y: 200, duration: 2000 }}>
+      {#each importantThings as important}
+        <button
+          onclick={() => {
+            importantSelection = important;
+            importantImage = cardData[importantSelection].image;
+            importantDescription = cardData[importantSelection].description;
+          }}
+          class="important"
+          id={importantSelection}
+          autofocus>{important}</button
+        >
+      {/each}
 
-    <div class="card-container" in:fly={{ y: 200, duration: 2000 }}>
-      <div class="card-inner">
-        {#key importantSelection}
-          <div
-            class="theImage"
-            in:fly={{ y: 50, duration: 1000 }}
-            out:fade={{ duration: 100, delay: 0 }}
-          >
-            <Image
-              image={importantImage}
-              title={importantSelection}
-              description={importantDescription}
-            />
-          </div>
-        {/key}
+      <div class="card-container" in:fly={{ y: 200, duration: 2000 }}>
+        <div class="card-inner">
+          {#key importantSelection}
+            <div
+              class="theImage"
+              in:fly={{ y: 50, duration: 1000 }}
+              out:fade={{ duration: 100, delay: 0 }}
+            >
+              <Image
+                image={importantImage}
+                title={importantSelection}
+                description={importantDescription}
+              />
+            </div>
+          {/key}
+        </div>
       </div>
     </div>
-  </div>
 
-  <h2 in:fly={{ y: 600, duration: 2000 }}>Fun facts</h2>
-  <div class="facts">
-    <ol id="facts-list" in:fly={{ y: 600, duration: 2000 }}>
-      {#each fFacts as fact}
-        <li class="fact-description">{fact}</li>
-      {/each}
-    </ol>
-  </div>
+    <h2 in:fly={{ y: 600, duration: 2000 }}>Fun facts</h2>
+    <div class="facts">
+      <ol id="facts-list" in:fly={{ y: 600, duration: 2000 }}>
+        {#each fFacts as fact}
+          <li class="fact-description">{fact}</li>
+        {/each}
+      </ol>
+    </div>
+  {/if}
 </div>
 
 <!-- Set-ExecutionPolicy Unrestricted -Scope CurrentUser
