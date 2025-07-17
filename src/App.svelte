@@ -48,9 +48,15 @@
   let importantSelection = $state("Reading");
   let importantImage = $derived(cardData[importantSelection].image);
   let importantDescription = $derived(cardData[importantSelection].description);
+
+  // document.getElementById("theContent").style.display = "none";
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("theContent").style.display = "block";
+  });
 </script>
 
-<div class="container">
+<div class="container" id="theContent">
   <h1 in:fly={{ y: -200, duration: 2000 }}>About Me</h1>
   <p in:fly={{ y: 200, duration: 2000 }}>{bio}</p>
 
